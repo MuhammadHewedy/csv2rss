@@ -2,7 +2,9 @@ require 'sinatra'
 require_relative 'feed_generator'
 
 get '/' do
-    '<form action="/csv2rss" method="post" enctype="multipart/form-data">
+    '<h3> Welcome to CSV to RSS - google merchant- Converter </h3>
+    <p>please contact mohammed_a_hewedy@hotmail.com for more info.</p>
+    <form action="/csv2rss" method="post" enctype="multipart/form-data">
         <input type="file" name="file" />
         <input type="submit" />
     </form>
