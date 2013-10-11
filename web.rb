@@ -3,11 +3,13 @@ require_relative 'feed_generator'
 
 get '/' do
     '<h3> Welcome to CSV to RSS - google merchant- Converter </h3>
-    <p>please contact mohammed_a_hewedy@hotmail.com for more info.</p>
     <form action="/csv2rss" method="post" enctype="multipart/form-data">
         <input type="file" name="file" />
         <input type="submit" />
     </form>
+
+    <p>Please contact mohammed_a_hewedy@hotmail.com for more info. <br />
+    Code on Github at: <a href="https://github.com/MuhammadHewedy/csv2rss">https://github.com/MuhammadHewedy/csv2rss<a></p>
     '
 end
 
