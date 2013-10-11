@@ -27,7 +27,9 @@ post '/csv2rss' do
 
     content_type 'application/octet-stream'
     attachment "#{name}_#{Time.new}.xml"
-    body(convert_csv_to_rss csv_data)
+    rss_data = convert_csv_to_rss csv_data
+    STDOUT.puts "writting response ..."
+    body rss_data
 end
 
 get '/csv2rss' do
